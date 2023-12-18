@@ -143,10 +143,42 @@
 
 
 
-// ?Menu taski code start
+// Task2
+// let arr =["php","php","css","css","script","script","html","html","java"];
+// let arr1 = [...new Set(arr)];
+
+// console.log(arr1);
 
 
 
+// Task 5
+// let arr =[34,2,6,10,365,89,44];
+
+// let max = Math.max(...arr);
+// let min = Math.min(...arr);
+
+// console.log(max);
+// console.log(min);
+
+
+// Task6
+// let arr =["Neriman","Orxan","Allahverdi","Esmer","Ferhad","Nezrin"];
+
+// arr.forEach((array)=>{
+//     if(array.includes("N") || array.includes("M")){
+//         console.log(array);
+//     }
+// });
+
+
+// Task 7
+
+// let colors =["Blue","Orange","Yellow","Red"];
+
+// colors.forEach((color)=>{
+//     let verilen =(color + " " + color.length);
+//     console.log(verilen.split(","));
+// });
 
 
 
