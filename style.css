@@ -101,7 +101,9 @@ input{
 
 /* Menu taski code start */
 
-
+h1{
+    padding: 20px;
+}
 
 section{
     padding-top: 25px;
@@ -116,6 +118,7 @@ section{
 form .form-group{
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 
