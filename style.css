@@ -75,7 +75,7 @@ p{
 } */
 
 
-
+/* 
 .box1{
     margin: 150px auto;
     display: flex;
@@ -92,4 +92,33 @@ p{
 
 input{
     width: 50px;
+} */
+
+
+
+
+
+
+/* Menu taski code start */
+
+
+
+section{
+    padding-top: 25px;
+}
+
+
+.left-side{
+    width: 50%;
+}
+
+
+form .form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+
+form .form-group input{
+    width: 200px;
 }
