@@ -182,3 +182,58 @@
 
 
 
+
+// let colors =["yellow","green","red"];
+// let color =[];
+
+// colors.map(item=>{
+//     color.push(item,item.length)
+//     return item
+// });
+
+// console.log(color);
+
+
+// colors.map(item=>(
+//     color.push(item,item.length)
+// ));
+
+// console.log(color);
+
+
+
+// colors.forEach(item=>{
+//     color.push(item,item.length)
+// });
+// console.log(color);
+
+
+
+
+
+// Obyektler
+
+// let obj ={
+//     name:'Tural',
+//     surname:'jafarov',
+//     age:27,
+//     'university 0f chiga':'BDU'
+// };
+
+// delete obj.name
+// console.log(obj);
+
+
+
+// let ob = new Object();
+//  ob.name="Tural";
+//  ob.age=27;
+//  console.log(ob);
+
+
+
+
+
+// let a =prompt("Daxil ele");
+// console.log(a);
+// console.log(obj[a]);
