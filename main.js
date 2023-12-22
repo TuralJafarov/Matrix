@@ -237,3 +237,74 @@
 // let a =prompt("Daxil ele");
 // console.log(a);
 // console.log(obj[a]);
+
+
+
+
+
+
+
+
+
+// Inputnan verilenlerin add olunmasi
+
+let input1 = document.querySelector("#input1");
+let input2 = document.querySelector("#input2");
+let btn1 = document.querySelector(".btn1");
+let btn2 = document.querySelector(".btn2");
+let btnRemove = document.querySelector(".btnRemove");
+
+let arr = ["Kia", "Mercedes", "BMW"];
+let verilenler = arr.join(", ");
+let divElement = document.createElement("div");
+divElement.textContent = verilenler;
+divElement.setAttribute("style", "padding:50px")
+document.body.appendChild(divElement);
+
+btn1.addEventListener("click", (e) => {
+    e.preventDefault();
+    birinci();
+  
+});
+
+btn2.addEventListener("click", (e) => { 
+     e.preventDefault();
+     ikinci();
+});
+
+ btnRemove.addEventListener("click", (e) => { 
+    e.preventDefault();
+     ucuncu();
+    });
+
+
+
+
+
+function sil() {
+    input1.value = input2.value = "";
+}
+
+function birinci(){
+    arr.push(input1.value.trim());
+    verilenler = arr.join(", "); 
+    divElement.textContent = verilenler; 
+    sil();
+};
+
+
+function ikinci(){
+    arr.unshift(input1.value.trim());
+    verilenler = arr.join(" ,"); 
+    divElement.textContent = verilenler; 
+    sil();
+}
+
+
+function ucuncu(){
+    arr.remove(input2.value.trim())
+    verilenler = arr.join(" ,"); 
+    divElement.textContent = verilenler; 
+    sil();
+    
+};

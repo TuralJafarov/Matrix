@@ -101,7 +101,7 @@ input{
 
 /* Menu taski code start */
 
-h1{
+/* h1{
     padding: 20px;
 }
 
@@ -123,5 +123,21 @@ form .form-group{
 
 
 form .form-group input{
-    width: 200px;
-}
+    width: 200px; */
+
+
+
+
+
+    /* Inputnan verilenlerin add olunmasi */
+    section{
+        padding: 20px;
+    }
+
+    input{
+        padding: 2px 5px;
+    }
+
+    button{
+        padding: 2px 5px;
+    }
