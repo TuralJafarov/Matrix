@@ -280,7 +280,6 @@ btn2.addEventListener("click", (e) => {
 
 
 
-
 function sil() {
     input1.value = input2.value = "";
 }
@@ -301,10 +300,8 @@ function ikinci(){
 }
 
 
-function ucuncu(){
-    arr.remove(input2.value.trim())
-    verilenler = arr.join(" ,"); 
-    divElement.textContent = verilenler; 
-    sil();
-    
-};
+arr.forEach(item=>{
+    if(item==input2.value){
+        item.remove();
+    }
+});
