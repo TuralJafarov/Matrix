@@ -254,54 +254,47 @@ let btn1 = document.querySelector(".btn1");
 let btn2 = document.querySelector(".btn2");
 let btnRemove = document.querySelector(".btnRemove");
 
-let arr = ["Kia", "Mercedes", "BMW"];
-let verilenler = arr.join(", ");
-let divElement = document.createElement("div");
-divElement.textContent = verilenler;
-divElement.setAttribute("style", "padding:50px")
+
+
+let arr =["Kia","Mercedes","BWM"];
+let verilen =arr.join(",");
+let divElement =document.createElement("div");
+divElement.textContent=verilen;
+divElement.setAttribute("style","padding:50px");
 document.body.appendChild(divElement);
 
-btn1.addEventListener("click", (e) => {
+
+btn1.addEventListener("click",(e)=>{
     e.preventDefault();
-    birinci();
-  
-});
-
-btn2.addEventListener("click", (e) => { 
-     e.preventDefault();
-     ikinci();
-});
-
- btnRemove.addEventListener("click", (e) => { 
-    e.preventDefault();
-     ucuncu();
-    });
-
-
-
-
-function sil() {
-    input1.value = input2.value = "";
-}
-
-function birinci(){
     arr.push(input1.value.trim());
-    verilenler = arr.join(", "); 
-    divElement.textContent = verilenler; 
-    sil();
+    mainCode();
+})
+
+btn2.addEventListener("click",(e)=>{
+    e.preventDefault();
+    arr.unshift(input1.value.trim());
+    mainCode();
+  
+})
+
+function deleteValue(){
+    input1.value=input2.value=""
 };
 
-
-function ikinci(){
-    arr.unshift(input1.value.trim());
-    verilenler = arr.join(" ,"); 
-    divElement.textContent = verilenler; 
-    sil();
+function mainCode(){
+    verilen=arr.join(",");
+    divElement.textContent=verilen;
+    deleteValue();
 }
 
+btnRemove.addEventListener("click", (e)=>{
+     e.preventDefault();
+     if(arr.includes(input2.value)){
+        let a =arr.indexOf(input2.value);
+        arr.splice(a,1);
+        mainCode();
+     }
 
-arr.forEach(item=>{
-    if(item==input2.value){
-        item.remove();
-    }
+
+
 });
